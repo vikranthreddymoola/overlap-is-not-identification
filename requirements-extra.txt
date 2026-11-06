@@ -1,0 +1,5 @@
+# Only for the optional steps; see README.
+# experiments/doubleml_check.py (use a separate environment, see README)
+doubleml==0.10.1
+# scripts/download_data.py, to read the DCWP utilization PDF
+pymupdf==1.26.5

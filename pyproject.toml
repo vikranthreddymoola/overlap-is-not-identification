@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "overlap-diag"
+version = "1.0.0"
+description = "Overlap diagnostics for double machine learning: overlap-inflation check, tipping point and benchmarks"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "Vikranth Reddy Moola"}]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.8", "scikit-learn>=1.3"]
+keywords = ["double machine learning", "causal inference", "overlap", "pricing",
+            "sensitivity analysis", "partially linear model"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.optional-dependencies]
+experiments = ["pandas>=1.5", "joblib>=1.2", "matplotlib>=3.6", "pyarrow>=10"]
+test = ["pytest>=7", "pandas>=1.5"]
+
+[project.urls]
+Repository = "https://github.com/vikranthreddymoola/overlap-is-not-identification"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# numpy 2.0 with Apple's Accelerate BLAS raises spurious floating-point warnings
+# in matmul; the results are finite and unaffected.
+filterwarnings = ["ignore:.*encountered in matmul:RuntimeWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+extend-exclude = ["*.md"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["overlap_diag"]
+known-local-folder = ["analysis", "application", "benchmark", "delivery", "dgp", "diagnostic",
+                      "download_data", "run_sims"]
+
+[tool.ruff.lint.per-file-ignores]
+# LaTeX table headers
+"experiments/analysis.py" = ["E501"]

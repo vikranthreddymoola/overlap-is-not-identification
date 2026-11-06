@@ -1,0 +1,38 @@
+\begin{tabular}{llrrrrrrr}
+\toprule
+ & & & & & \multicolumn{2}{c}{Pre-specified rule} & \multicolumn{2}{c}{Paired test} \\
+\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+Refinement & Design & Level & Coarse bias & Absorbed & $z$ & Flagged & $z$ & Flagged \\
+\midrule
+\multicolumn{9}{l}{\emph{Coarse residual contains confounded variation}} \\
+Month indicators $\to$ exact calendar & Study 2 & $\omega = 0.02$ & 1.205 & 60\% & 11.1 & 100.0\% & 16.7 & 100.0\% \\
+Month indicators $\to$ exact calendar & Study 2 & $\omega = 0.1$ & 0.436 & 22\% & 8.2 & 100.0\% & 20.8 & 100.0\% \\
+Month indicators $\to$ exact calendar & Study 2 & $\omega = 0.4$ & 0.088 & 4\% & 3.9 & 6.5\% & 15.2 & 100.0\% \\
+Additive $\to$ interaction learner & Study 4 & $\sigma_v = 0.5$ & $-$0.802 & 80\% & $-$22.6 & 100.0\% & $-$27.2 & 100.0\% \\
+Additive $\to$ interaction learner & Study 4 & $\sigma_v = 1$ & $-$0.504 & 50\% & $-$23.5 & 100.0\% & $-$35.0 & 100.0\% \\
+Additive $\to$ interaction learner & Study 4 & $\sigma_v = 2$ & $-$0.203 & 20\% & $-$16.2 & 100.0\% & $-$27.8 & 100.0\% \\
+$X \to X$ and forecast, $\kappa = 1$ & Study 1 & $\sigma_v = 0.5$ & $-$0.800 & 80\% & $-$31.8 & 100.0\% & $-$38.5 & 100.0\% \\
+$X \to X$ and forecast, $\kappa = 1$ & Study 1 & $\sigma_v = 1$ & $-$0.502 & 50\% & $-$33.6 & 100.0\% & $-$51.4 & 100.0\% \\
+$X \to X$ and forecast, $\kappa = 1$ & Study 1 & $\sigma_v = 2$ & $-$0.202 & 20\% & $-$22.7 & 100.0\% & $-$39.7 & 100.0\% \\
+Day part $\to$ hour of week & Rideshare & -- & 0.261 & 28\% & 34.7 & 100.0\% & 58.3 & 100.0\% \\
+Forecast inputs $\to$ forecast, real-time supply & Delivery & -- & $-$0.927 & 68\% & $-$125.1 & 100.0\% & $-$168.2 & 100.0\% \\
+\addlinespace
+\multicolumn{9}{l}{\emph{It does not}} \\
+Exact calendar $\to$ more Fourier terms & Study 2 & $\omega = 0.02$ & $-$0.012 & 0\% & 0.0 & 0.0\% & 0.1 & 2.0\% \\
+Exact calendar $\to$ more Fourier terms & Study 2 & $\omega = 0.1$ & $-$0.005 & 0\% & 0.0 & 0.0\% & 0.1 & 1.5\% \\
+Exact calendar $\to$ more Fourier terms & Study 2 & $\omega = 0.4$ & $-$0.002 & 0\% & 0.0 & 0.0\% & 0.2 & 2.5\% \\
+Without $\to$ with a price-only covariate & Study 2 & $\omega = 0.02$ & 0.000 & 86\% & 0.1 & 3.5\% & 0.2 & 6.5\% \\
+Without $\to$ with a price-only covariate & Study 2 & $\omega = 0.1$ & $-$0.001 & 53\% & 0.1 & 0.5\% & 0.1 & 5.5\% \\
+Without $\to$ with a price-only covariate & Study 2 & $\omega = 0.4$ & $-$0.001 & 15\% & 0.0 & 0.0\% & 0.1 & 6.5\% \\
+$X \to X$ and forecast, $\kappa = 0$ & Study 1 & $\sigma_v = 0.5$ & $-$0.006 & 0\% & 0.0 & 0.0\% & 0.3 & 6.0\% \\
+$X \to X$ and forecast, $\kappa = 0$ & Study 1 & $\sigma_v = 1$ & $-$0.003 & 0\% & 0.0 & 0.0\% & 0.9 & 13.0\% \\
+$X \to X$ and forecast, $\kappa = 0$ & Study 1 & $\sigma_v = 2$ & $-$0.003 & 0\% & 0.1 & 0.0\% & 1.6 & 33.0\% \\
+Forecast inputs $\to$ forecast, logged inputs only & Delivery & -- & $-$0.014 & 1\% & $-$0.4 & 0.0\% & $-$3.3 & 90.0\% \\
+Without $\to$ with a price-only covariate & Heterogeneous & $\delta = 0$ & $-$0.001 & 39\% & 0.1 & 0.0\% & 0.2 & 6.0\% \\
+Without $\to$ with a price-only covariate & Heterogeneous & $\delta = 0.1$ & 0.039 & 39\% & 0.4 & 0.0\% & 0.7 & 9.5\% \\
+Without $\to$ with a price-only covariate & Heterogeneous & $\delta = 0.3$ & 0.119 & 39\% & 0.8 & 0.0\% & 1.6 & 30.5\% \\
+Exact calendar $\to$ more Fourier terms & Heterogeneous & $\delta = 0$ & $-$0.004 & 0\% & 0.0 & 0.0\% & 0.0 & 3.0\% \\
+Exact calendar $\to$ more Fourier terms & Heterogeneous & $\delta = 0.1$ & 0.030 & 0\% & 0.0 & 0.0\% & $-$0.1 & 2.5\% \\
+Exact calendar $\to$ more Fourier terms & Heterogeneous & $\delta = 0.3$ & 0.097 & 0\% & 0.0 & 0.0\% & 0.0 & 3.5\% \\
+\bottomrule
+\end{tabular}

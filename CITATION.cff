@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "overlap-is-not-identification: code for Overlap Is Not Identification"
+type: software
+version: 1.0.0
+date-released: 2026-11-06
+license: Apache-2.0
+repository-code: "https://github.com/vikranthreddymoola/overlap-is-not-identification"
+abstract: >-
+  Code, simulation output and paper source for "Overlap Is Not Identification:
+  Reactive Pricing, Exogenous Variation, and Double Machine Learning". Includes
+  the overlap_diag Python package: a cross-fitted partially linear DML
+  estimator, the overlap-inflation diagnostic, and the tipping point with
+  benchmarks.
+keywords:
+  - double machine learning
+  - causal inference
+  - overlap
+  - dynamic pricing
+  - sensitivity analysis
+  - partially linear model
+authors:
+  - family-names: Moola
+    given-names: Vikranth Reddy
+    orcid: "https://orcid.org/0009-0002-3524-3240"

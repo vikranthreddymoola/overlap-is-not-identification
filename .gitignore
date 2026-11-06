@@ -1,0 +1,27 @@
+# data is downloaded by scripts/download_data.py
+data/*
+!data/README.md
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+dmlvenv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.log
+.DS_Store
+
+# LaTeX build files
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls

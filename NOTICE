@@ -1,0 +1,11 @@
+overlap-is-not-identification
+Copyright 2026 Vikranth Reddy Moola
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The semi-synthetic studies use public data that is not redistributed here:
+- NYC Taxi and Limousine Commission, High Volume For-Hire Vehicle Trip Records,
+  March 2023.
+- NYC Department of Consumer and Worker Protection, Weekly Utilization Data,
+  Delivery Apps.
+scripts/download_data.py fetches these files from their publishers.

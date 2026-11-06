@@ -1,0 +1,23 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+Learner & $\sigma_v$ & Bias & SD & Coverage & $\hat\omega$ & Proposition~\ref{prop:bias} \\
+\midrule
+Additive spline & 0.5 & $-$0.801 & 0.015 & 0.0\% & 0.567 & $-$0.800 \\
+Additive spline & 1 & $-$0.503 & 0.014 & 0.0\% & 0.678 & $-$0.500 \\
+Additive spline & 2 & $-$0.203 & 0.010 & 0.0\% & 0.844 & $-$0.200 \\
+\addlinespace
+Spline with $X_3 X_4$ & 0.5 & $-$0.008 & 0.033 & 93.6\% & 0.113 & 0 \\
+Spline with $X_3 X_4$ & 1 & $-$0.005 & 0.016 & 93.2\% & 0.338 & 0 \\
+Spline with $X_3 X_4$ & 2 & $-$0.003 & 0.008 & 92.2\% & 0.675 & 0 \\
+\addlinespace
+Random forest & 0.5 & $-$0.649 & 0.020 & 0.0\% & 0.370 & -- \\
+\addlinespace
+Boosting, defaults & 0.5 & $-$0.309 & 0.029 & 0.0\% & 0.178 & -- \\
+Boosting, defaults & 1 & $-$0.119 & 0.017 & 0.0\% & 0.401 & -- \\
+Boosting, defaults & 2 & $-$0.041 & 0.009 & 0.2\% & 0.727 & -- \\
+\addlinespace
+Boosting, tuned & 0.5 & $-$0.317 & 0.032 & 0.0\% & 0.179 & -- \\
+Boosting, tuned & 1 & $-$0.128 & 0.017 & 0.0\% & 0.411 & -- \\
+Boosting, tuned & 2 & $-$0.053 & 0.009 & 0.0\% & 0.741 & -- \\
+\bottomrule
+\end{tabular}

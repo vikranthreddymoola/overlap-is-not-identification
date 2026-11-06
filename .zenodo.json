@@ -1,0 +1,22 @@
+{
+  "title": "overlap-is-not-identification: code for \"Overlap Is Not Identification: Reactive Pricing, Exogenous Variation, and Double Machine Learning\"",
+  "upload_type": "software",
+  "description": "<p>Code, simulation output and paper source for <em>Overlap Is Not Identification: Reactive Pricing, Exogenous Variation, and Double Machine Learning</em>.</p><p>Includes <code>overlap_diag</code>, a Python package with a cross-fitted partially linear double machine learning estimator, the overlap-inflation diagnostic, and the tipping point with benchmarks, and the scripts that reproduce every number, table and figure in the paper. Simulations use synthetic data; the semi-synthetic studies use public New York City TLC trip records and DCWP delivery-app data with a simulated outcome.</p>",
+  "creators": [
+    {
+      "name": "Moola, Vikranth Reddy",
+      "orcid": "0009-0002-3524-3240"
+    }
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "double machine learning",
+    "causal inference",
+    "overlap",
+    "dynamic pricing",
+    "sensitivity analysis",
+    "partially linear model"
+  ],
+  "version": "1.0.0",
+  "language": "eng"
+}
