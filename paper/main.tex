@@ -4,8 +4,8 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{times}
-\usepackage{amsmath, amssymb, amsthm}
+\usepackage{amsmath, amsthm}
+\usepackage{newtxtext, newtxmath}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage[numbers, sort&compress]{natbib}
@@ -37,6 +37,10 @@
 
 \begin{abstract}
 Platforms that set prices with algorithms raise them where a forecast predicts low supply, so prices and outcomes move together for reasons other than the effect of price. Studies that estimate price effects with double machine learning often support their credibility with an overlap diagnostic, the share of price variance the controls do not explain. We show that this diagnostic adds exogenous variation, which identifies the effect, and variation from confounding the controls miss, which biases it, so high overlap can accompany a badly biased estimate. A pricing rule that reacts to its own forecast creates the confounded part unless the forecast is logged, and nuisance-model error creates it too. We propose an overlap-inflation diagnostic, which flags an estimate when a finer adjustment lowers overlap and moves the estimate, and a benchmark for a sensitivity tipping point. In simulations, a semi-synthetic study on New York City rideshare records, and a delivery-style study calibrated to public data on New York City delivery apps, a diagnostic rule fixed in advance flags all but the mildest confounded refinement and almost none of the harmless ones, and logging the forecast removes the bias.
+
+\medskip
+\noindent\textbf{Keywords:} double machine learning, overlap, dynamic pricing, sensitivity analysis, omitted-variable bias.\\
+\textbf{JEL codes:} C14, C18, C21, L11.
 \end{abstract}
 
 \section{Introduction}
