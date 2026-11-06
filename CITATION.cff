@@ -5,6 +5,7 @@ type: software
 version: 1.0.0
 date-released: 2026-11-06
 license: Apache-2.0
+doi: 10.5281/zenodo.24000911
 repository-code: "https://github.com/vikranthreddymoola/overlap-is-not-identification"
 abstract: >-
   Code, simulation output and paper source for "Overlap Is Not Identification:

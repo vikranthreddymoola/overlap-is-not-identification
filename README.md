@@ -1,5 +1,7 @@
 # Overlap Is Not Identification
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24000911.svg)](https://doi.org/10.5281/zenodo.24000911)
+
 Code, simulation output and paper source for
 
 > *Overlap Is Not Identification: Reactive Pricing, Exogenous Variation, and
@@ -364,8 +366,8 @@ outcome is simulated; no data from any company is used.
 ## Citation
 
 If you use this code, please cite it. `CITATION.cff` has the details, and
-GitHub's "Cite this repository" button formats them. Each release is archived
-on Zenodo with its own DOI.
+GitHub's "Cite this repository" button formats them. Every release is archived
+on Zenodo; the DOI [10.5281/zenodo.24000911](https://doi.org/10.5281/zenodo.24000911) always points to the latest version.
 
 ```bibtex
 @software{moola2026overlap,
@@ -374,6 +376,7 @@ on Zenodo with its own DOI.
   author  = {Moola, Vikranth Reddy},
   year    = {2026},
   version = {1.0.0},
+  doi     = {10.5281/zenodo.24000911},
   url     = {https://github.com/vikranthreddymoola/overlap-is-not-identification}
 }
 ```
