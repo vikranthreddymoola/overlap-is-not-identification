@@ -5,6 +5,8 @@ Code, simulation output and paper source for
 > *Overlap Is Not Identification: Reactive Pricing, Exogenous Variation, and
 > Double Machine Learning* (2026).
 
+Read the paper: [paper/main.pdf](paper/main.pdf).
+
 The repository has two parts:
 
 - **`overlap_diag`**, a small Python package with a cross-fitted partially
@@ -330,7 +332,7 @@ examples/
     quickstart.py     the example above
 tests/                unit tests and exact re-runs of stored replications
 results/              output of every run (CSV)
-paper/                LaTeX source, generated numbers and tables, figures
+paper/                the paper (main.pdf), LaTeX source, generated numbers and tables, figures
 data/                 downloaded and prepared inputs (not under version control)
 ```
 
