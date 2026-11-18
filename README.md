@@ -1,13 +1,15 @@
 # Overlap Is Not Identification
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24000911.svg)](https://doi.org/10.5281/zenodo.24000911)
+[![SSRN](https://img.shields.io/badge/SSRN-7697558-blue)](https://doi.org/10.2139/ssrn.7697558)
 
 Code, simulation output and paper source for
 
 > *Overlap Is Not Identification: Reactive Pricing, Exogenous Variation, and
 > Double Machine Learning* (2026).
 
-Read the paper: [paper/main.pdf](paper/main.pdf).
+Read the paper: [paper/main.pdf](paper/main.pdf), or the preprint on SSRN,
+[10.2139/ssrn.7697558](https://doi.org/10.2139/ssrn.7697558).
 
 The repository has two parts:
 
@@ -369,13 +371,16 @@ If you use this code, please cite it. `CITATION.cff` has the details, and
 GitHub's "Cite this repository" button formats them. Every release is archived
 on Zenodo; the DOI [10.5281/zenodo.24000911](https://doi.org/10.5281/zenodo.24000911) always points to the latest version.
 
+To cite the paper, use the citation on its SSRN page,
+[doi:10.2139/ssrn.7697558](https://doi.org/10.2139/ssrn.7697558).
+
 ```bibtex
 @software{moola2026overlap,
   title   = {overlap-is-not-identification: code for Overlap Is Not
              Identification},
   author  = {Moola, Vikranth Reddy},
   year    = {2026},
-  version = {1.0.0},
+  version = {1.0.1},
   doi     = {10.5281/zenodo.24000911},
   url     = {https://github.com/vikranthreddymoola/overlap-is-not-identification}
 }

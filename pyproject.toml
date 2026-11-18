@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "overlap-diag"
-version = "1.0.0"
+version = "1.0.1"
 description = "Overlap diagnostics for double machine learning: overlap-inflation check, tipping point and benchmarks"
 readme = "README.md"
 license = {text = "Apache-2.0"}

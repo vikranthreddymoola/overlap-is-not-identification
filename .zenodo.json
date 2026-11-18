@@ -17,6 +17,14 @@
     "sensitivity analysis",
     "partially linear model"
   ],
-  "version": "1.0.0",
-  "language": "eng"
+  "version": "1.0.1",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "10.2139/ssrn.7697558",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    }
+  ]
 }
